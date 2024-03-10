@@ -1,10 +1,184 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>joetroll's website!!</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
 <body>
-<p>Hello world!</p>
+<title>/</title>
+
+<script>
+window.roseAscii = `You Found @RealRoseWilson
+                                     ^!!!:                                                                                                            
+                                    :J. ^77^                                                                                                          
+                                   .Y!    :!7~.                                                                                                       
+                                   ?J:      .~77^                                                                      .::                            
+                                  !?:.         ^7?!:                :^~7. :^~~~:                                   .:!??!7^                           
+                                 !5.:?7          .~?7:   :.      :!7!^??!7!^::..  .........                  .:~7???7~:. ~7                           
+                                ^P!.J7?             ^?7.:?7~   :7!^  !?^:    .^~~!!!!!!!!!!!!~^:         :~7?JJ?!^.      :Y:                          
+                                J5.?!~?               ^:.:.:   :.            ..             .:^~~.   :~?YYJ7:..      :.   Y7                          
+                               ^P!.! 77                                                          .:!77!~:.          !5J   JY.                         
+                               !5.   ?7              .:..                                     .^~~^:.              :?7J   ?P:                         
+                               ??    ??         ..   .^^~~~^:                               .:^:.                 :?:!J   !P:                         
+                               7^    !Y.     .^^.         .:^.                                                   ^J: ^!   ?5.                         
+                               ?:  ^::5^   :~~.                                                                 !?.      :P?                          
+                               7:^::7!JY^~!~:                    ..                                           .77        ?5:                          
+                               :::7. .:!J^.                     7!                                           :7^        :P7                           
+                                . ^7~^:::              .:^^.   ~Y.                  :^^:                    :!~~!?!     J5:                           
+                                :^  .::^.           .~7777!.   J?                   :^~7?~                 ~7!~!7~     !P~                            
+                              .?!J!   ^^           :~^.       .5!                ^^   : ^J~                . ^??~~:   :5!                             
+                               ?~~J? ^7            .  .~!     :P~                ?^   ^.                     :^~7?:  ~?^                              
+                               .7: ..?.              :?~J.    :P~            .! .J.   .!.      ..          :~!!~:  ~?!.                               
+                                ..  ?~              .J^ J:    .57            !?~^?     :7:      ^:         :.  .:!?7:                                 
+                              ^:   ^J.              7! .!J^^^. 7Y. .:       :?.??~      :?!      7:           :7?7~^   ^:                             
+                             ~7.   J~          ^:  ^Y?Y55P5555Y!Y~ !5^      7^ ^P!:^:::. .7J~.   :J.                   !7                             
+                           :?7    ^Y.         .?.^JP5J7~:::.:^75?Y:~Y?.    ~7.!J5YJJJYY5YJ~^7?!^. ?7                   ~J                             
+                          !J!^~:  7?          ^??5?^.  :?YY7.  :^:?~?7!   ~?.77^...   .:^7Y5!.^~^ ^Y.                  :5:                            
+                        ^JY7!~7.  J!          !5?:    !PPPPG7     .Y?~J  7J.   ^?Y5Y?:    .?P?.    J7                   7J.                           
+                       .~~:. 7^  .Y~          ?!     :5PPPPP?     ~Y. :^J?.   !PPPPPP5:     7GJ.   ~Y.                   ~J~                          
+                            77   .5^  .       7:     7PPPPPP7    :5~ .75!    .YPPPPPPP!     .?Y:   :5:                    :??:                        
+                           :Y.   .Y~.7~:      7^     ^P5YYP5:   .J! !Y?:     .5PPPPPPP~             Y~                      ^7!:                      
+                           77     Y!^?:7      !?.     !YJJY^   .J7!J?^        YPYJYPPJ.             J~ .                      :~!~^.                  
+                          .Y~     ?J~7 7~     .?~.     !J7.    ^!~~:          ^5JJJ5?.              Y^~!                     :~!7!^.                  
+                          .5^     ^5!! .?~~^~.:!.                              :7?7~        ::::   :Y.J7                     :~~.                     
+                          .5~      JJ! :~!!~~~^~~              :???:                        .: .:^.~7^5?                       :7:                    
+                           J?      :Y?  ..~77: .::              ...                          .^~!~~?^!77:                       ~?                    
+                           ~5:      :7~    .~!~:                                            .::^~^J!!?:J~       :               .J.                   
+                            ?J        :^   ^!^..                                                .?!~5~ !J      .7                ?^                   
+                       .!^  .J!       !:^7  :7J!.                                              ^?!!Y^  ^5^     ^J                ?~                   
+                     .!Y7.   :Y^     :?.YJ    :?Y?~.             :^.                      .:^~7?7?7.:!?JYY.    !?               .Y~                   
+                  :^7?7:      :J:    7!77J      :7YY?~.        .77!J?^                    .^~~~~!!7YY7^. !J:   ?!   :           7J:                   
+                 .!7~^^^       :7.  ^57: J^  .!    :!JJ?~.      .  .^^                      :~?YYY7^.     ~?~ .Y^  ~?          .Y:                    
+                   :^~!~       :.   ~^   ^J. :?       .^!??7~:.                     ..:~!7JY5Y7~:          .: ~Y  :Y^          ~Y                     
+                 .:~7!^       .Y:         !?  ?:          :~?YYY?!:.       ..:^~!7JY555Y5Y~^.                 Y~ .J!           !J                     
+                 ~J!:         ?J:~7:       !?.^7             .^!?Y55?!7?JYY5PP55YJ?!~^. ~5.                  7J .J7            !Y                     
+                  :7?!^:.    !577:7!        ^?~7~                 :57:^!!~^^^:..        :P7                 ^Y..J7             .5^                    
+                    :~!!^   ^?~.  !J          ^7?~               . ?5!^:.           .:~7YP5.               :Y^^Y!           ^7^.!Y.                   
+                         ^:       .?7            ^~.           .!!JJJ5PP5YYJJJJJJJY55PP5Y55!?~:           :J~!J:             77~~?J:                  
+                        ~?.         ~              .          .?7~5:  .~J5PP5YYYYYYJ?!^:7J~!J?Y?!:       ^J??!               .J. :~?!^.               
+                       .Y^          ~^  .                .^?~^J!^?YJ. ~!!7Y?7^        ~??7^7Y?^:!JJ7^   !Y?~.                ^J.    .^:               
+                       .Y~          :? :7              :7YJ!:^~77!^YY::!J5J?~:     .!?7~!J?!~^^^:^~?5Y7^^.                  :!.                       
+                        !Y.          ?::!            ^?5J~^^^^^!?~^^Y5:.~!~:    .~77JJ7?7~^^^^^^^^^:^!J5J!.                 .                         
+                         ??          7^~:          :J5Y~:^^^^^^^!J7!7J5^     :!JJ7!!?7~^^^^^^^^^^^^^:::^7JY?^              .J.                        
+                          7?.        ~^:         ~?5?~^^^^^:^^^^^^7J!^?57.:!?J?7J77!^^^^^^^^^^^^^^^::^^::^~7JJ!.            7J:                       
+                           ^?!.                 7PJ~^:^^^^^^^^^^^^^^?7!J?~~~~^~!7~:^^^^^^^^^^^^^^^^^^::^^:^^^!YY~          :~!J!.                     
+                             ^7!.              75!^^~^^^^^:::.^^^^^^^!J!^^^^~~^^^^^^^^^^^^^^^^^~7!^^^^^:^^^^^^^?PJ:        :5J7JY~                    
+                               !J.            .Y?^^~J~^^^^.:~:.^^^^^^^^^^^^^^^::^:^^^^^^^^^^^^^~YJ^^^^^^^^^^^^^^!5P~        !Y.:~?^                   
+                                ?J  .?.       ^5~^^^77^^^:^^^^^^^^^^^^^^^^^^^^..^^:^^^^^^^^^^^^^!Y^^^^^^^^^^^^^^^~JP^       :5^                       
+                                ~Y.^J5^       JJ^^^^!~:^:^^^^^^^^^^^^^^^^^^^^^:^.^^^^^^^^^^^^^^^!J^^^^^^^^^^^^^^^^^J5~      :5^                       
+                                7Y77:!Y.     :5!::^^?~^^^^::^^^^^^^^^^^^^^^^^^^^::^^^^^^^^^^^^^^J7^^^^^^^^^^^^^^^^^^?P~     !J.                       
+                               .7^.   ?J.    75~^:.~7^^^^:..:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Y!^^^^^^^^^^^^^^^^^^^?5:    :.                        
+                                       ?Y^  .5J^^^^7~:^^^.:.:^^^^^:.:^::^^:^:^^^^^^^^^^^^^^^^^^^Y~^^^^^^^^^^^^^^^^^:^^JJ                              
+                                        ~?7^~P!^^^^J~^::::^^:.^.^^.:^:..^^.:.^^^^^^^^^^^^^^^^^^^J7^^^^^^^^^^^^^^^^^^:^~Y^                             
+                                          . ?5^^^^^J~^^^:^^^^::.^:.~^::~^^^:.^^^^^^^^^^^^^^^^^^^!J^^^^^^^^^^^^^^^^^^^^^~J.                            
+                                            YJ^^:^^?7^^^^^^^^^^^^::^^::~^::.^^^^^^^^^^^^^^^^^^^^~Y^^^^^^^^^^^^^^^^^^^^^.7?                            
+                                           .5!:^^^^~J7~^^^^^^^^^^^^^^^^^^::^^^^^^^^^^^^^^^^^^^:^!?^^^^^^^^^^^^^^^^^^^^^^^J.                           
+                                           :?. .^^^::!~:^^^^:::^:^^^^:::^^^^^:^:.:^:.::^^^::^^^^!~^^^^^^^::^:.:..:^^:^^^.:`
+let userName = '';
+let isNameSet = false;
+let currentDirectory = {
+    name: 'root',
+    contents: ['index.html', 'lol.txt']
+};
+
+const rootDirectory = {
+    name: 'root',
+    contents: ['index.html', 'lol.txt']
+};
+
+// Generate a new directory with random numbers and add it to the root directory
+const randomDirName = 'dir_' + Math.random().toString(36).substring(7);
+rootDirectory.contents.push({name: randomDirName, contents: [{name: 'secret', contents: []}]});
+
+var term = $('body').terminal({
+    name: function() {
+        if (isNameSet) {
+            term.echo('$NAME = \'' + userName + '\'');
+        } else {
+            term.echo('Please enter your name first.');
+        }
+    },
+    help: function() {
+        term.echo('name                 Shows your username.\nls                    Show the files on your current directory.\ncat                    Shows the file contents.\nmkdir                 Create a new directory.\ncd                     Change the current directory.');
+    },
+    ls: function() {
+        const contents = currentDirectory.contents.map(function(item) {
+            return item.hasOwnProperty('name') ? '[[b;blue;]' + item.name + ']' : '[[b;green;]' + item + ']';
+        }).join('     ');
+        term.echo(contents);
+    },
+    cat: function(filename) {
+        const file = currentDirectory.contents.find(function(item) {
+            return item.hasOwnProperty('name') ? item.name === filename : item === filename;
+        });
+        if (file) {
+            if (file === 'index.html') {
+                term.echo('dir_ <html><body>ill add source code later</body></html>');
+            } else if (file === 'lol.txt') {
+                term.echo('dir_ deez nuts');
+            } else if (file.name === 'secret') {
+                window.open('https://www.youtube.com/watch?v=p7YXXieghto', '_blank');
+            }
+        } else {
+            term.error('jsh: File not found: ' + filename);
+        }
+    },
+    rose: function() {
+        term.echo(window.roseAscii)
+    },
+    mkdir: function(dirName) {
+        currentDirectory.contents.push({name: dirName, contents: []});
+        term.echo('Directory \'' + dirName + '\' created.');
+    },
+cd: function(dirName) {
+    if (dirName === undefined || dirName === null) {
+        term.echo('[[;red;]WARNING: All files will be deleted in the current directory (does not apply if in root directory). Type "yes" to confirm.]: ');
+        term.read('', function(confirmation) {
+            if (confirmation.toLowerCase() === 'yes') {
+                currentDirectory = rootDirectory;
+                document.title = "/" // Update the document title when changing to the root directory
+                term.echo('jsh: Changed to root directory.');
+            } else {
+                term.echo('Aborted.');
+            }
+        });
+    } else {
+        let newDir = currentDirectory.contents.find(function(item) {
+            return item.hasOwnProperty('name') ? item.name === dirName : item === dirName;
+        });
+        if (newDir) {
+            currentDirectory = newDir;
+            document.title = "/" + dirName; // Update the document title when changing directories
+            term.echo('jsh: Changed to directory: ' + dirName);
+        } else {
+            document.title = "Error: Directory not found"; // Update the document title when a directory is not found
+            term.error('jsh: Directory not found: ' + dirName);
+        }
+    }
+}
+
+    
+}, {
+    checkArity: false,
+    greetings: false,
+    onInit: function() {
+        this.read('What is your name? ', function(name) {
+            userName = name;
+            isNameSet = true;
+            term.echo('Welcome to my website, ' + userName + '!\nType \'help\' for more info\nYou cannot use spaces for folders, nor create any files, this is a beta');
+        });
+    },
+    strings: {
+        commandNotFound: "jsh: unknown command: %s",
+        echoCommand: true,
+        wrongArity: "'%s' is missing one or more arguments",
+    },
+    pasteImage: true,
+});
+
+
+</script>
 
 </body>
 </html>
