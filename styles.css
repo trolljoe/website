@@ -1,14 +1,18 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   margin: 0;
   padding: 0;
-  background-color: #1e1e2e;
+  background-color: #000000;
 }
 
 .container {
   max-width: 600px;
   margin: 50px auto;
   text-align: center;
+}
+
+.container h1 {
+  color: #39ff14;
 }
 
 .icons {
@@ -24,6 +28,7 @@ body {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+  filter: invert(75%) sepia(62%) saturate(2244%) hue-rotate(59deg) brightness(106%) contrast(108%);
 }
 
 p {
