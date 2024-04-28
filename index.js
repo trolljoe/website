@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var app = document.getElementById('app');
 
   var typewriter = new Typewriter(app, {
-    loop: true
+    loop: false
 });
 
   typewriter.typeString('joetroll')
+    .start();
 
   links.forEach(link => {
     link.addEventListener('click', function(event) {
