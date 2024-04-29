@@ -13,12 +13,13 @@ body {
   margin: 0 auto;
  }
 
-.icons {
+ .icons {
   margin-top: 20px;
 }
 
 .icons a {
   margin: 0 10px;
+  display: inline-block;
 }
 
 .icons img {
@@ -27,14 +28,16 @@ body {
   border-radius: 50%;
   cursor: pointer;
   filter: invert(75%) sepia(62%) saturate(2244%) hue-rotate(59deg) brightness(106%) contrast(108%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons a:hover img {
+  transform: scale(1.2);
 }
 
 p {
   text-align: center;
 }
-
-/* i am not shortening this because i'm fucking stupid */
-
 
 .crt::before {
   content: " ";

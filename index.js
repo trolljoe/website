@@ -1,5 +1,4 @@
 // i'm sorry for what you have to witness
-// makes it so the links open in a new tab
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('.icons a');
   const text = "joetroll";
@@ -13,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   typewriter.typeString('joetroll')
     .start();
+
+    
 
   links.forEach(link => {
     link.addEventListener('click', function(event) {
