@@ -6,9 +6,12 @@ body {
 }
 
 .container {
-  margin: 50px auto;
-  text-align: center;
-}
+  display: grid;
+  place-items: center;
+  height: 20vh;
+  max-width: 600px;
+  margin: 0 auto;
+ }
 
 .icons {
   margin-top: 20px;
