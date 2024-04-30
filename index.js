@@ -1,9 +1,5 @@
 // i'm sorry for what you have to witness
 document.addEventListener('DOMContentLoaded', function() {
-  const links = document.querySelectorAll('.icons a');
-  const text = "joetroll";
-  const speed = 100;
-  let i = 0;
   var app = document.getElementById('app');
 
   var typewriter = new Typewriter(app, {
