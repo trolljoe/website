@@ -5,13 +5,15 @@ body {
   background-color: #141414;
 }
 
-.container {
+.container,
+p {
   display: grid;
   justify-items: center;
   align-items: center;
   animation: textCrt 1.8s infinite;
 }
- .icons {
+
+.icons {
   margin-top: 20px;
 }
 
@@ -31,11 +33,6 @@ body {
 
 .icons a:hover img {
   transform: scale(1.2);
-}
-
-p {
-  text-align: center;
-  animation: textCrt 1.8s infinite;
 }
 
 @keyframes flicker {
@@ -62,20 +59,7 @@ p {
   }
 }
 
-.crt::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 2;
-  background-size: 100% 4px, 4px 100%;
-  pointer-events: none;
-}
-
+.crt::before,
 .crt::after {
   content: " ";
   display: block;
@@ -84,10 +68,18 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(18, 16, 16, 0.1);
-  opacity: 0;
   z-index: 2;
   pointer-events: none;
+}
+
+.crt::before {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 4px, 4px 100%;
+}
+
+.crt::after {
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
   animation: flicker 1s infinite;
 }
 
@@ -99,7 +91,6 @@ p {
   font-style: normal;
   font-display: swap;
   unicode-range: U+000-5FF;
-
 }
 
 .animations-stopped * {
@@ -112,7 +103,6 @@ p {
   opacity: 0;
 }
 
-/* stuff */
 #checkboxLabel {
   position: relative;
   padding-left: 30px;
@@ -121,34 +111,31 @@ p {
   top: 150%;
 }
 
-
-#animationCheckbox + #checkboxLabel::before {
+#animationCheckbox + #checkboxLabel::before,
+#animationCheckbox + #checkboxLabel::after {
   content: '';
   position: absolute;
   left: 0;
   top: 60%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-color: green;
-  border: 2px solid green;
   cursor: pointer;
   z-index: 2;
 }
 
+#animationCheckbox + #checkboxLabel::before {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border: 2px solid green;
+}
 
 #animationCheckbox + #checkboxLabel::after {
   content: '\2713';
-  position: absolute;
   left: 5px;
-  top: 60%;
-  transform: translateY(-50%);
   font-size: 16px;
   color: white;
   display: none;
-  z-index: 3;
 }
-
 
 #animationCheckbox:checked + #checkboxLabel::after {
   display: block;
