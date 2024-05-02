@@ -101,3 +101,55 @@ p {
   unicode-range: U+000-5FF;
 
 }
+
+.animations-stopped * {
+  animation: none !important;
+  text-shadow: none !important;
+}
+
+#animationCheckbox {
+  position: absolute;
+  opacity: 0;
+}
+
+/* stuff */
+#checkboxLabel {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  z-index: 1;
+  top: 150%;
+}
+
+
+#animationCheckbox + #checkboxLabel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border: 2px solid green;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+#animationCheckbox + #checkboxLabel::after {
+  content: '\2713';
+  position: absolute;
+  left: 5px;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: white;
+  display: none;
+  z-index: 3;
+}
+
+
+#animationCheckbox:checked + #checkboxLabel::after {
+  display: block;
+}
