@@ -9,6 +9,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
+  animation: textCrt 1.8s infinite;
 }
  .icons {
   margin-top: 20px;
@@ -34,6 +35,31 @@ body {
 
 p {
   text-align: center;
+  animation: textCrt 1.8s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    opacity: 0.8;
+  }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes textCrt {
+  0%, 100% {
+    text-shadow: 0.45px 0 1px rgba(19, 46, 250, 0.5), -0.44px 0 1px rgba(255, 39, 107, 0.3), 0 0 3px;
+  }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    text-shadow: 2.9px 0 1px rgba(19, 46, 250, 0.5), -2.8px 0 1px rgba(255, 39, 107, 0.3), 0 0 3px;
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    text-shadow: 0.04px 0 1px rgba(19, 46, 250, 0.5), -0.03px 0 1px rgba(255, 39, 107, 0.3), 0 0 3px;
+  }
 }
 
 .crt::before {
@@ -44,10 +70,25 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(34, 29, 29, 0) 50%, rgba(27, 26, 26, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 0, 0, 0.02), rgba(31, 31, 32, 0.06));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 1s infinite;
 }
 
 @font-face {
