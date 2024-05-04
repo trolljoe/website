@@ -170,7 +170,37 @@ p {
   color: black;
 }
 
+
+#blogspot {
+  font-family: 'Monofonto', monospace;
+  margin-left: 450px;
+}
+
 a.blogpost {
   color: rgb(54, 238, 21);
   text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(54, 238, 21, 0.3);
+  padding: 10px;
+  transition: background-color 0.3s;
+  margin-left: 0px;
+  transform: translateY(60%);
+}
+
+a.blogpost:hover {
+  background-color: rgba(54, 238, 21, 0.1);
+}
+
+a.blogpost h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+a.blogpost p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+a.blogpost h1 {
+  color: rgb(255, 255, 255);
 }
