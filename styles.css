@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #141414;
+  zoom: 1.2;
 }
 
 .container {
@@ -152,4 +153,19 @@ p {
 
 #animationCheckbox:checked + #checkboxLabel::after {
   display: block;
+}
+
+.blog-button {
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: green;
+  cursor: pointer;
+  font-weight: bold;
+  transform: translateY(200%);
+}
+
+.blog-button:hover {
+  background-color: green;
+  color: black;
 }
