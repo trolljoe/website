@@ -31,5 +31,21 @@
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
   <button class="blog-button" onclick="window.location.href='https://blogjoetroll.pages.dev'">[   blog   ]</button>
+
+  <div id="blogposts"></div>
+  <script>
+    const posts = await fetch('https://blogjoetroll.pages.dev/api/posts')
+    const postsJson = await posts.json()
+    const blogposts = document.getElementById('blogposts')
+    postsJson.forEach(post => {
+      const postElement = document.createElement('a.blogpost')
+      postElement.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>${post.description}</p>
+      `
+      postElement.href = `https://blogjoetroll.pages.dev/${post.slug}`
+      blogposts.appendChild(postElement)
+    })
+  </script>
 </body>
 </html>

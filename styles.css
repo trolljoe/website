@@ -169,3 +169,8 @@ p {
   background-color: green;
   color: black;
 }
+
+a.blogpost {
+  color: rgb(54, 238, 21);
+  text-decoration: none;
+}
