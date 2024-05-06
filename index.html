@@ -36,7 +36,7 @@
   <script>
   async function fetchAndRenderPosts() {
     try {
-        const posts = await fetch('https://blogjoetroll.pages.dev/api/posts');
+        const posts = await fetch('https://blog.joetroll.is-a.dev/api/posts');
         const postsJson = await posts.json();
         const blogposts = document.getElementById('blogposts');
 
