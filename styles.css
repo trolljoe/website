@@ -11,6 +11,7 @@ body {
   justify-items: center;
   align-items: center;
   animation: textCrt 1.8s infinite;
+  
 }
  .icons {
   margin-top: 20px;
@@ -71,7 +72,8 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+              linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 2;
   background-size: 100% 4px, 4px 100%;
   pointer-events: none;
@@ -89,7 +91,6 @@ p {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 1s infinite;
 }
 
 @font-face {
@@ -168,39 +169,4 @@ p {
 .blog-button:hover {
   background-color: green;
   color: black;
-}
-
-
-#blogspot {
-  font-family: 'Monofonto', monospace;
-  margin-left: 450px;
-}
-
-a.blogpost {
-  color: rgb(54, 238, 21);
-  text-decoration: none;
-  display: block;
-  border-bottom: 1px solid rgba(54, 238, 21, 0.3);
-  padding: 10px;
-  transition: background-color 0.3s;
-  margin-left: 0px;
-  transform: translateY(60%);
-}
-
-a.blogpost:hover {
-  background-color: rgba(54, 238, 21, 0.1);
-}
-
-a.blogpost h2 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-a.blogpost p {
-  font-size: 1rem;
-  margin-top: 5px;
-}
-
-a.blogpost h1 {
-  color: rgb(255, 255, 255);
 }
