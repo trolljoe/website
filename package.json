@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "socket.io": "^4.7.5",
-    "socket.io-client": "^4.7.5"
+    "socket.io-client": "^4.7.5",
+    "vercel": "^34.2.8"
   }
 }

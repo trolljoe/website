@@ -1,13 +1,18 @@
 {
     "version": 2,
-    "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/.*", "dest": "server.js" }],
+    "builds": [
+      { "src": "server/**/*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/server/index.js"
+      }
+    ],
     "env": {
-      "MY_VARIABLE": "my-value"
+      "NODE_ENV": "production"
     },
-    "github": {
-      "repo": "user/repo",
-      "branch": "main"
-    }
+    "build": {},
+    "branch": "chatroom"
   }
   
